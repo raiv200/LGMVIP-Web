@@ -1,6 +1,6 @@
 # LGMVIP-Web Virtual Internship Program — (1st Nov 2022 - 30th Nov 2022 )
   
-  ![LGMVIP-Web Internship Projects](./public/WebDeveloper.png)
+  ![LGMVIP-Web Internship Projects](./public/web-developer.PNG)
 
 ### Project Task-1
 
@@ -14,7 +14,7 @@ IDE: Visual Studio Code
 ```
 
 
-[Live Demo URL](https://taskupp.vercel.app)
+[Live Demo URL](https://todo-list-app-raivikas.vercel.app/)
 
 
 ![Poject Final View](./public/todolist.PNG)
