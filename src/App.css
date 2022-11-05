@@ -42,6 +42,7 @@ input {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 14px 10px;
   background-color: #ffc472;
   width: 100%;
@@ -51,9 +52,8 @@ input {
 }
 
 .btn {
-  margin: 12px 19px;
-  height: 35px;
-  width: 100px;
+ 
+  margin-top: 8px;
   padding: 9px;
   font-weight: bold;
   border-radius: 5px;
@@ -168,7 +168,7 @@ input {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .container {
    
 
