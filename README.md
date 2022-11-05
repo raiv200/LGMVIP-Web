@@ -1,6 +1,6 @@
-# Build with Linode Hackathon (Linode X Hashnode) — June 2022
+# LGMVIP-Web Virtual Internship Program — (1st Nov 2022 - 30th Nov 2022 )
   
-  ![Linode X AWS Amplify Hackathon](./public/sponsor-hashnode.png)
+  ![LGMVIP-Web Internship Projects](./public/WebDeveloper.png)
 
 ### Project Task-1
 
