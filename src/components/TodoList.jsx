@@ -3,7 +3,7 @@ import "../App.css";
 
 const TodoList = (props) => {
   return (
-    <div className="todo">
+    <div className="todo custom-scroll">
         {props.children}
     </div>
   )

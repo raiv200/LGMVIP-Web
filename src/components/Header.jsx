@@ -4,7 +4,7 @@ import "../App.css";
 const Header = ({ currentTodo, addTodo, handleOnChange,handleKeyDown }) => {
   return (
     <header className="header">
-      <h2 className="header__title">To-Do List</h2>
+      <h2 className="header__title">Todo-List</h2>
       <div className="container">
         <input
          

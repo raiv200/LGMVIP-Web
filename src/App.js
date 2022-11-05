@@ -13,6 +13,11 @@ function App() {
   };
 
   const addTodo = () => {
+
+    if(currentTodo === null || currentTodo.trim() === ""){
+      alert("Please enter a todo title !!");
+      return;
+    }
     setTodoList([...todoList, { title: currentTodo, completed: false }]);
     setCurrentTodo("");
   };
@@ -53,7 +58,7 @@ function App() {
       <TodoList>
         {todoList.map((todo, index) => (
           <TodoItem
-          key={index}
+            key={index}
             title={todo.title}
             completed={todo.completed}
             completeTodo={completeTodo}

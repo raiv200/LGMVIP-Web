@@ -1,13 +1,13 @@
 .app {
   text-align: center;
   font-family: monospace;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif; 
 }
 
 input {
   padding: 5px;
   margin: 10px 10px 0;
-  height: 30px;
+  height: 26px;
   width: 300px;
   font-size: 20px;
   border-radius: 5px;
@@ -21,7 +21,7 @@ input {
   align-items: center;
   flex-direction: column;
   background-color: #ffe6b4;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 .header__title {
   display: flex;
@@ -34,18 +34,20 @@ input {
 .todo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 6px 12px;
+  overflow-y: scroll;
+  height:550px;
 }
 .container {
   display: flex;
   justify-content: center;
-  padding: 20px 10px;
+  padding: 14px 10px;
   background-color: #ffc472;
   width: 100%;
   max-width: 450px;
   border-radius: 12px;
+  z-index: 100;
 }
 
 .btn {
@@ -76,19 +78,14 @@ input {
   justify-content: space-between;
   margin: 10px 5px;
   padding: 10px 10px;
-  background-color: #ffe6b4;
+  background-color: #ffcb83;
   font-size: 20px;
   font-family: "Inter", sans-serif;
   animation-name: reveal;
   animation-duration: 0.4s;
-}
-.todo__item > p {
-  margin: 10px 10px;
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
   position: relative;
 }
+
 .todo__item > h3 {
   width: 400px;
   display: flex;
@@ -152,7 +149,7 @@ input {
 .completed__label > p {
   display: flex;
   text-align: center;
-  font-size: 14px;
+  font-size:15px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
   color: #34bc52;
@@ -168,4 +165,80 @@ input {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+
+@media (max-width: 400px) {
+  .container {
+   
+
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    margin-left:5px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  input {
+   
+    width: 240px;
+    margin:0;
+    height: 23px;
+
+    
+  }
+  .btn {
+    margin:0;
+    margin-left:4px;
+    margin-top:4px
+ 
+  }
+
+  .todo__item {
+    width: 320px;
+    height: 45px;
+    
+  }
+  .todo__item > h3 {
+    
+    font-size:16px;
+   
+  }
+
+  .icon__comp {
+    width: 20px;
+    height: 20px;
+  }
+  .icon__del {
+    width: 20px;
+    height: 20px;
+  }
+
+  .completed__label {
+    
+    margin-top: -3.4rem;
+   
+  }
+  .completed__label >p {
+    
+    font-size:10px;
+   
+  }
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 0.7em;
+  height: 0.7em;
+}
+ 
+.custom-scroll::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+}
+ 
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #fbecd6;
+  outline: 1px solid #fedcad;
+  border-radius:3px;
 }
